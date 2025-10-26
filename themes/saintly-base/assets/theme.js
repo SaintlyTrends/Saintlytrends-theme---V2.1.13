@@ -1,0 +1,1 @@
+document.addEventListener('click',e=>{ if(e.target.matches('[data-close]')) e.target.closest('[data-modal]').removeAttribute('open'); });

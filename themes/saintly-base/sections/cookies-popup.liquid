@@ -1,0 +1,4 @@
+{% comment %}
+Cookies / Country popup (center) with logo
+{% endcomment %}
+<dialog id='cookies'><img src='{{ settings.logo | image_url: width:120 }}'><p>We use cookies.</p><button>Accept</button></dialog>{% schema %}{"name":"Cookies","settings":[{"type":"image_picker","id":"logo","label":"Logo"}]}{% endschema %}

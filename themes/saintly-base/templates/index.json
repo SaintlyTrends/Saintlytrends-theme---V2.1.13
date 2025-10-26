@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner"
+    },
+    "story": {
+      "type": "brand-story"
+    },
+    "catvid": {
+      "type": "home-category-video"
+    },
+    "recs": {
+      "type": "recommendations"
+    },
+    "nl": {
+      "type": "newsletter-popup"
+    },
+    "cookies": {
+      "type": "cookies-popup"
+    }
+  },
+  "order": [
+    "hero",
+    "story",
+    "catvid",
+    "recs",
+    "nl",
+    "cookies"
+  ]
+}

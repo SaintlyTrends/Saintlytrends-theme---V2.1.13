@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "drawer": {
+      "type": "mini-cart-drawer"
+    }
+  },
+  "order": [
+    "drawer"
+  ]
+}

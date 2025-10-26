@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "plp": {
+      "type": "plp-grid"
+    }
+  },
+  "order": [
+    "plp"
+  ]
+}

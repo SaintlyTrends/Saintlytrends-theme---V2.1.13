@@ -1,0 +1,5 @@
+{% comment %}
+Announcement Bar – editable text / link
+{% endcomment %}
+<div role='region' aria-label='announcement' class='announ'>{{ settings.text }}</div>
+{% schema %}{"name":"Announcement Bar","settings":[{"type":"text","id":"text","label":"Text","default":"Free shipping over ₹999"}]}{% endschema %}

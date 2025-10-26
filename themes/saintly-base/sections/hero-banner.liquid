@@ -1,0 +1,4 @@
+{% comment %}
+Hero Banner Image / Video + overlay toggle + text
+{% endcomment %}
+<section class='hero'>{% if section.settings.video != blank %}{{ section.settings.video | video_tag }}{% else %}{{ section.settings.image | image_url: width: 2400 | image_tag }}{% endif %}<div class='hero__text'><h1>{{ section.settings.heading }}</h1><p>{{ section.settings.subheading }}</p></div>{% schema %}{"name":"Hero Banner","settings":[{"type":"image_picker","id":"image","label":"Image"},{"type":"video","id":"video","label":"Video"},{"type":"text","id":"heading","label":"Heading","default":"Too Good To Be True"},{"type":"text","id":"subheading","label":"Subheading"},{"type":"checkbox","id":"overlay","label":"Overlay","default":false}]}{% endschema %}</section>

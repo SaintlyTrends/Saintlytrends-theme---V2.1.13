@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "pdp": {
+      "type": "pdp-main"
+    },
+    "recs": {
+      "type": "recommendations"
+    }
+  },
+  "order": [
+    "pdp",
+    "recs"
+  ]
+}

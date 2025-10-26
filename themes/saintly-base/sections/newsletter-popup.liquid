@@ -1,0 +1,4 @@
+{% comment %}
+Newsletter popup + fixes
+{% endcomment %}
+<dialog data-modal id='nl-modal'><form method='dialog'><h3>{{ settings.heading }}</h3><input placeholder='Email'><button>Subscribe</button><button data-close>×</button></form></dialog>{% schema %}{"name":"Newsletter Popup","settings":[{"type":"text","id":"heading","default":"Join the Club"}]}{% endschema %}
