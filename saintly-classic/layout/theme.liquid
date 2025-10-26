@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ page_title }} · SAINTLY</title>
+    {{ content_for_header }}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" />
+    <style>:root{ --s-red: #D21F3C; }</style>
+  </head>
+  <body>
+    <header class="header container">
+      <a class="logo" href="/">
+        {% if settings.logo != blank %}
+          <img src="{{ settings.logo | image_url: width: 240 }}" alt="Saintly logo" height="40" style="height:40px"/>
+        {% else %}
+          SAINTLY
+        {% endif %}
+      </a>
+      <nav class="nav">
+        <a href="/collections/all">Shop</a>
+        <a href="/pages/about">About</a>
+        <a href="/cart">Cart ({{ cart.item_count }})</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      {{ content_for_layout }}
+    </main>
+
+    <footer class="footer container">
+      <div>© {% assign y = 'now' | date: '%Y' %}{{ y }} Saintly Trends Pvt. Ltd. · <a href="/policies/privacy-policy">Privacy</a> · <a href="/policies/terms-of-service">Terms</a></div>
+    </footer>
+    <script src="{{ 'theme.js' | asset_url }}"></script>
+  </body>
+</html>

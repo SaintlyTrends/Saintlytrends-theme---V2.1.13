@@ -1,0 +1,26 @@
+{% schema %}
+{ "name": "Main Product",
+  "settings": [],
+  "presets": [{ "name": "Main Product" }]
+}
+{% endschema %}
+<section class="container" style="padding:24px 0">
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:24px">
+    <div>
+      {% for media in product.media %}
+        <div class="card" style="margin-bottom:12px">
+          {{ media | media }}
+        </div>
+      {% endfor %}
+    </div>
+    <div>
+      <h1>{{ product.title }}</h1>
+      <div>{{ product.price | money }}</div>
+      <div>{{ product.description }}</div>
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <button class="btn btn--primary" type="submit">Add to cart</button>
+      </form>
+    </div>
+  </div>
+</section>
